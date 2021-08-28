@@ -16,12 +16,12 @@ public class Variable implements Serializable {
 	public static final String[] EXT_ODT = { ".odt" };
 	public static final String[] EXT_ODS = { ".ods" };
 	public static final String[] EXT_ODP = { ".odp" };
-	public static final String DIR_DOWNLOAD = DIR_DOWNLOAD();
+	public static final String DIR_DOWNLOAD = Variable.dirDownload();
 	public static final int TYPE_CONVERT = 0;
 	public static final int TYPE_CONVERT_1 = 1;
 	public static final int TYPE_CONVERT_2 = 2;
 
-	public static String DIR_DOWNLOAD() {
+	public static String dirDownload() {
 		FileSystemView fsv = FileSystemView.getFileSystemView();
 		File com = fsv.getHomeDirectory();
 		String desktop = com.getPath();
