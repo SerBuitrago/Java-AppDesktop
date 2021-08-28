@@ -36,4 +36,11 @@ public class Validator implements Serializable{
 		chain+= "]";
 		return chain;
 	}
+	public static String name(String aux) {
+		File file = new File(aux);
+		String var=file.getName();
+		int start= var.lastIndexOf(".");
+		
+		return var.substring(0, start);
+	}
 }
