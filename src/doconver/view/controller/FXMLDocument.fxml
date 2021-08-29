@@ -1,37 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="362.0"
-	prefWidth="488.0" xmlns="http://javafx.com/javafx/8.0.171"
-	xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="doconver.view.controller.FXMLDocumentController">
-	<children>
-		<Button fx:id="button" layoutX="126" layoutY="90"
-			onAction="#handleButtonAction" text="Click Me!" />
+<AnchorPane id="AnchorPane" fx:id="containerParent" prefHeight="857.0" prefWidth="1410.0" style="-fx-background-color: rgb(227, 235, 243);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doconver.view.controller.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="97.0" fitWidth="301.0" layoutX="32.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../resources/img/LOGO%20DOCONVER.png" />
+         </image>
+      </ImageView>
+      <Group layoutX="20.0" layoutY="530.0">
+         <children>
+            <Pane prefHeight="97.0" prefWidth="105.0" />
+         </children>
+      </Group>
+      <Group layoutX="141.0" layoutY="530.0" />
+      <Group layoutX="263.0" layoutY="530.0" />
+      <Group layoutX="382.0" layoutY="530.0">
+         <children>
+            <Pane prefHeight="97.0" prefWidth="105.0" />
+         </children>
+      </Group>
+      <Group layoutX="504.0" layoutY="530.0" />
+      <Group layoutX="620.0" layoutY="530.0" />
+      <Pane layoutX="453.0" layoutY="238.0" prefHeight="53.0" prefWidth="384.0">
+         <children>
+            <Label layoutX="26.0" layoutY="13.0" prefHeight="27.0" prefWidth="345.0" text="Convierte tus archivos a cualquier formato" textFill="#50575d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="447.0" layoutY="181.0" prefHeight="57.0" prefWidth="395.0">
+         <children>
+            <Group layoutX="14.0" layoutY="2.0">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="384.0" text="Conversor de archivos" textAlignment="CENTER" textFill="#f1294d">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <Pane layoutX="1022.0" layoutY="180.0" opacity="0.85" prefHeight="117.0" prefWidth="281.0" style="-fx-background-color: rgb(194,206,230); -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="36.0" layoutY="14.0" text="Paso 1" textFill="#c191a4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="48.0" prefHeight="57.0" prefWidth="234.0" text="Seleccione el archivo desde el ordenador" textFill="#50565c" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Blend />
+         </effect>
+      </Pane>
+      <Pane layoutX="1022.0" layoutY="340.0" opacity="0.85" prefHeight="117.0" prefWidth="281.0" style="-fx-background-color: rgb(194,206,230); -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="36.0" layoutY="14.0" text="Paso 2" textFill="#c191a4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="48.0" prefHeight="57.0" prefWidth="234.0" text="Elija el formato al cual desea convertir" textFill="#50565c" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1022.0" layoutY="506.0" opacity="0.85" prefHeight="117.0" prefWidth="281.0" style="-fx-background-color: rgb(194,206,230); -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="36.0" layoutY="14.0" text="Paso 3" textFill="#c191a4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="48.0" prefHeight="57.0" prefWidth="234.0" text="Descargue su archivo convertido" textFill="#50565c" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="502.0" layoutY="602.0" prefHeight="72.0" prefWidth="234.0">
+         <children>
+            <Button layoutX="8.0" layoutY="8.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="214.0" style="-fx-border-radius: 100px; -fx-background-color: rgb(241,41,77);" text="Convertir" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="715.0" layoutY="400.0" prefHeight="57.0" prefWidth="254.0">
+         <children>
+            <SplitMenuButton layoutX="14.0" layoutY="7.0" mnemonicParsing="false" text="Convertir a:" textFill="#50575d">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Docx" />
+                  <MenuItem mnemonicParsing="false" text="Xlsx" />
+                  <MenuItem mnemonicParsing="false" text="Pptx" />
+                  <MenuItem mnemonicParsing="false" text="Odt" />
+                  <MenuItem mnemonicParsing="false" text="Ods" />
+                  <MenuItem mnemonicParsing="false" text="Odp" />
+                  <MenuItem mnemonicParsing="false" text="Pdf" />
+               </items>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </SplitMenuButton>
+         </children>
+      </Pane>
+      <Pane layoutX="477.0" layoutY="400.0" prefHeight="57.0" prefWidth="196.0" style="-fx-background-color: rgb(227, 235, 243);">
+         <children>
+            <SplitMenuButton layoutX="14.0" layoutY="7.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="Convertir de:" textFill="#50565c">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Docx" />
+                  <MenuItem mnemonicParsing="false" text="Xlsx" />
+                  <MenuItem mnemonicParsing="false" text="Pptx" />
+                  <MenuItem mnemonicParsing="false" text="Odt" />
+                  <MenuItem mnemonicParsing="false" text="Ods" />
+                  <MenuItem mnemonicParsing="false" text="Odp" />
+                  <MenuItem mnemonicParsing="false" text="Pdf" />
+               </items>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </SplitMenuButton>
+         </children>
+      </Pane>
+      <Pane layoutX="85.0" layoutY="393.0" prefHeight="72.0" prefWidth="368.0">
+         <children>
+            <Button fx:id="buttonFile" layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonFileAction" prefHeight="53.0" prefWidth="350.0" style="-fx-border-radius: 100px; -fx-background-color: rgb(241,41,77);" text="Seleccionar archivo" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
 
-		<Label fx:id="label" layoutX="126" layoutY="120" minHeight="16"
-			minWidth="69" />
-		<Button layoutX="124.0" layoutY="165.0" mnemonicParsing="false"
-			prefHeight="56.0" prefWidth="105.0"
-			style="-fx-graphic: url('https://icons.iconarchive.com/icons/blackvariant/button-ui-ms-office-2016/48/Word-2-icon.png')"
-			text="convertir a word">
-
-		</Button>
-		<Button layoutX="259.0" layoutY="166.0" mnemonicParsing="false"
-			prefHeight="56.0" prefWidth="168.0"
-			style="-fx-graphic: url('https://icons.iconarchive.com/icons/blackvariant/button-ui-ms-office-2016/48/Word-2-icon.png')"
-			text="convertir a odp" />
-		<ImageView fitHeight="56.0" fitWidth="65.0" layoutX="57.0"
-			layoutY="166.0" pickOnBounds="true" preserveRatio="true">
-			<image>
-				<Image url="@folder/000700d7-1ab0-4a20-8e69-6fe0cd1230d2.jpg" />
-			</image>
-		</ImageView>
-
-	</children>
+    </children>
 </AnchorPane>
