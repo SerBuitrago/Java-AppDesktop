@@ -4,10 +4,7 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-<<<<<<< HEAD
 import doconver.app.Convert;
-=======
->>>>>>> 3c04199ed8677dfa37970141494336cc8932bc0b
 import doconver.app.Validator;
 import doconver.app.Variable;
 import javafx.event.ActionEvent;
@@ -27,18 +24,14 @@ public class FXMLDocumentController implements Initializable {
 
 	@FXML
 	private Button buttonFile;
-<<<<<<< HEAD
 	@FXML
 	private Button buttonConvert;
-=======
->>>>>>> 3c04199ed8677dfa37970141494336cc8932bc0b
 
 	@FXML
 	private SplitMenuButton menuOne;
 	@FXML
 	private SplitMenuButton menuTwo;
 
-<<<<<<< HEAD
 	private boolean is;
 	private File file;
 
@@ -57,35 +50,20 @@ public class FXMLDocumentController implements Initializable {
 		this.buttonFile.setText("Seleccionar archivo");
 	}
 
-=======
-	public FXMLDocumentController() {
-	}
-	
->>>>>>> 3c04199ed8677dfa37970141494336cc8932bc0b
 	/**
 	 * Metodo que crea los items del primer menu.
 	 */
 	public void items() {
 		this.menuOne.getItems().clear();
-<<<<<<< HEAD
 		for (String item : Variable.MENU) {
 			MenuItem m = new MenuItem(item);
 			m.setOnAction((e) -> {
-=======
-		for(String item: Variable.MENU) {
-			MenuItem m = new MenuItem(item);
-			m.setOnAction((e)-> { 
->>>>>>> 3c04199ed8677dfa37970141494336cc8932bc0b
 				submenu(m.getText());
 			});
 			this.menuOne.getItems().add(m);
 		}
 	}
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 3c04199ed8677dfa37970141494336cc8932bc0b
 	/**
 	 * Metodo que crea los items del segundo menu.
 	 */
@@ -93,7 +71,6 @@ public class FXMLDocumentController implements Initializable {
 		int index = Validator.indexElement(Variable.MENU, text);
 		this.menuTwo.getItems().clear();
 		this.menuTwo.setText("Convertir de: ");
-<<<<<<< HEAD
 		if (index > -1) {
 			this.menuOne.setText(text);
 			this.menuTwo.setDisable(false);
@@ -107,31 +84,12 @@ public class FXMLDocumentController implements Initializable {
 			}
 		} else {
 			init();
-=======
-		if(index > -1) {
-			this.menuOne.setText(text);
-			this.menuTwo.setDisable(false);
-			for(String item: Variable.MENU_ITEMS[index]) {
-				MenuItem m = new MenuItem(item);
-				m.setOnAction((e)-> { 
-					this.menuTwo.setText(m.getText());
-				});
-				this.menuTwo.getItems().add(m);
-			}
-		}else {
-			this.menuOne.setText("Convertir de: ");
-			this.menuTwo.setDisable(true);
->>>>>>> 3c04199ed8677dfa37970141494336cc8932bc0b
 		}
 	}
 
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-<<<<<<< HEAD
 		init();
-=======
-		this.menuTwo.setDisable(true);
->>>>>>> 3c04199ed8677dfa37970141494336cc8932bc0b
 		this.items();
 	}
 
@@ -140,7 +98,6 @@ public class FXMLDocumentController implements Initializable {
 		FileChooser fileChooser = new FileChooser();
 		fileChooser.setTitle("Open Resource File");
 		Stage stage = (Stage) this.containerParent.getScene().getWindow();
-<<<<<<< HEAD
 		this.file = fileChooser.showOpenDialog(stage);
 		if (file != null) {
 			buttonFile.setText(file.getName());
@@ -207,14 +164,6 @@ public class FXMLDocumentController implements Initializable {
 				}
 			}
 			init();
-=======
-		fileChooser.showOpenDialog(stage);
-		File file = fileChooser.showSaveDialog(stage);
-		if (file != null) {
-			buttonFile.setText(file.getName());
-		} else {
-			buttonFile.setText("Seleccionar archivo");
->>>>>>> 3c04199ed8677dfa37970141494336cc8932bc0b
 		}
 	}
 
