@@ -67,10 +67,6 @@ public final class FileChooserSample extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
-        Application.launch(args);
-    }
-
     private void openFile(File file) {
         EventQueue.invokeLater(() -> {
             try {

@@ -43,4 +43,17 @@ public class Validator implements Serializable {
 		int start = var.lastIndexOf(".");
 		return var.substring(0, start);
 	}
+	
+	public static int indexElement(String vector [], String element){
+		if(vector != null) {
+			int i = 0;
+			for(String e: vector) {
+				if(e.equals(element)) {
+					return i;
+				}
+				i++;
+			}
+		}
+		return -1;
+	}
 }

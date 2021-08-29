@@ -102,13 +102,4 @@ public class Convert implements Serializable {
 					Variable.EXT_POWER_POINT[0]);
 		}
 	}
-
-	public static void main(String args[]) {
-		Convert convert = new Convert();
-		try {
-			convert.excelToOds("C:\\Users\\SerBuitrago2\\Desktop\\notas.xlsx");
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-	}
 }
