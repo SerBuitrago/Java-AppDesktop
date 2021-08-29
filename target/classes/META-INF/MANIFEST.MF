@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: SerBuitrago2
 Build-Jdk: 11.0.12
+=======
+Built-By: Kajarka
+Build-Jdk: 16.0.2
+>>>>>>> 3c04199ed8677dfa37970141494336cc8932bc0b
 Created-By: Maven Integration for Eclipse
 

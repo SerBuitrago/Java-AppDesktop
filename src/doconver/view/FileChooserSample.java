@@ -33,7 +33,7 @@ public final class FileChooserSample extends Application {
                     openFile(file);
                 }
         });
-    }
+	}
 
     private void openFile(File file) {
         EventQueue.invokeLater(() -> {

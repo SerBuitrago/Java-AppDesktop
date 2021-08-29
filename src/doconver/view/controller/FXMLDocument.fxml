@@ -106,6 +106,7 @@
 		<Pane layoutX="502.0" layoutY="602.0" prefHeight="72.0" prefWidth="234.0">
 			<children>
 				<Button fx:id="buttonConvert" layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonConvertAction" prefHeight="53.0" prefWidth="214.0" style="-fx-border-radius: 100px; -fx-background-color: rgb(241,41,77);" text="Convertir" textFill="WHITE">
+
 					<font>
 						<Font size="24.0" />
 					</font>
