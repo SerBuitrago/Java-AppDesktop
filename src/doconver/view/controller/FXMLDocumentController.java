@@ -3,7 +3,6 @@ package doconver.view.controller;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import doconver.app.Convert;
 import doconver.app.Validator;
 import doconver.app.Variable;
@@ -16,6 +15,8 @@ import javafx.scene.control.SplitMenuButton;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 
 public class FXMLDocumentController implements Initializable {
 
@@ -156,15 +157,16 @@ public class FXMLDocumentController implements Initializable {
 								break;
 						}
 					} catch (Exception e) {
-						/*
-						 * AQUI VA LA VENTANA DEL ERROR EL ERROR ESTA EN E.GETMENSAJE
-						 * */
-						System.out.println(e.getMessage());
+						Alert a = new Alert(AlertType.WARNING);
+						a.setTitle(Variable.NAME_PROJECT);
+						a.setContentText(e.getMessage());
+						a.show();
 					}
 				}
 			}
 			init();
 		}
+		
 	}
 
 }
