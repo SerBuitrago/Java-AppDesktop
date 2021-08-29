@@ -54,6 +54,13 @@ public class Convert implements Serializable {
 					Variable.EXT_WORD[0]);
 		}
 	}
+	
+	public void odtToPDF(String entry) throws Exception {
+		if (Validator.validate(entry, Variable.EXT_ODT)) {
+			this.to(entry, Variable.DIR_DOWNLOAD, com.aspose.words.SaveFormat.PDF, Variable.TYPE_CONVERT_1,
+					Variable.EXT_PDF[0]);
+		}
+	}
 
 	/******************************
 	 * EXCEL
@@ -76,6 +83,13 @@ public class Convert implements Serializable {
 		if (Validator.validate(entry, Variable.EXT_ODS)) {
 			this.to(entry, Variable.DIR_DOWNLOAD, com.aspose.cells.SaveFormat.XLSX, Variable.TYPE_CONVERT_2,
 					Variable.EXT_EXCEL[0]);
+		}
+	}
+	
+	public void odsToPDF(String entry) throws Exception {
+		if (Validator.validate(entry, Variable.EXT_ODS)) {
+			this.to(entry, Variable.DIR_DOWNLOAD, com.aspose.cells.SaveFormat.PDF, Variable.TYPE_CONVERT_2,
+					Variable.EXT_PDF[0]);
 		}
 	}
 
@@ -102,13 +116,11 @@ public class Convert implements Serializable {
 					Variable.EXT_POWER_POINT[0]);
 		}
 	}
-
-	public static void main(String args[]) {
-		Convert convert = new Convert();
-		try {
-			convert.excelToOds("C:\\Users\\SerBuitrago2\\Desktop\\notas.xlsx");
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
+	
+	public void odptToPDF(String entry) throws Exception {
+		if (Validator.validate(entry, Variable.EXT_ODP)) {
+			this.to(entry, Variable.DIR_DOWNLOAD, com.aspose.slides.SaveFormat.Pdf, Variable.TYPE_CONVERT,
+					Variable.EXT_PDF[0]);
 		}
 	}
 }
