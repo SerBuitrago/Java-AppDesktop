@@ -9,6 +9,9 @@ El siguiente software permitirá convertir archivos en formato Microsoft a forma
     
 ## Authors
 
-- [@katherinepeterson](https://www.github.com/octokatherine)
+- [@SerBuitrago](https://github.com/SerBuitrago)
+- [@Leynerjoseoa](https://github.com/leynerjoseoa)
+- [@yadirGarcia](https://github.com/yadirGarcia)
+- [@soleimygomez](https://github.com/soleimygomez)
 
   
