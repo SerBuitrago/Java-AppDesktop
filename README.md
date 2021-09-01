@@ -31,9 +31,9 @@ La siguiente es una aplicación de escritorio desarrollada en el lenguaje de pro
 ![App Screenshot](https://i.ibb.co/yYVLfS9/Resultado.png)
 
   
-## API Reference
+# Detalles de desarrollo
 
-#### Get all items
+## Paquete APP:
 
 ```https://apireference.aspose.com/pdf/java
 Clase:  Variables.java
@@ -232,6 +232,62 @@ Clase:  Validator.java
 | :-------- | :------- | :------------------------- |
 | `indexElement` | `int` |Retorna el indice de la extension que se desea usar para el menu de extensiones dinamico|
 
+
+## Paquete view:
+
+ Este paquete está conformado por un total de dos clases que definen de manera clara y organizada cómo se van a mostrar los datos en la aplicación, adicional a esto se define el logo presente en la interfaz.
+
+
+
+#### Class:Doconver
+
+
+  En esta clase se genera el arranque de la aplicación bajo el método main y se construye la ventana de ejecución.  
+
+
+| Method | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| start | `void` | Obtiene el inicio del archivo fxml, se crea la Scene y se le da las propiedades a la misma(Se pueda maximizar la ventana, serializable, agrega título e icono  y por último la muestra). |
+| main | `void` | Ejecuta el método launch(args) la cual da inicio a la ejecución del programa.|
+
+
+
+
+
+#### Class:FileChooserSample
+
+  Clase que cuyo objetivo es abrir y seleccionar los archivos a los cuales se les va a hacer la conversión.
+
+
+
+| Method | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| start | `void` |Cuando se da click sobre el botón de seleccionar archivo desde el controller se llama a este método que lo que hace es abrir el explorador de archivos y cuando 	el usuario seleccione el archivo que desea convertir se ejecuta openButton.setOnAction el cual realiza las validaciones correspondientes si el archivo existe y si selecciono el archivo se ejecuta el método openFile quien lo abre y lo guarda. |
+| openFile | `void` | El método start de la misma clase en su última instrucción hace un llamado a este método y este lo que hace es verificar que todo esté correcto, si es así se abre el documento de lo contrario se lanza una excepción |
+
+
+
+
+
+## Paquete controller:
+##### Contiene una lógica que actualiza la vista en respuesta a las entradas de los usuarios de la aplicación.
+
+
+
+#### Class: FXMLDocumentController
+
+| Method | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| init | `void` | Inicializa las variables de la vista |
+| items | `void` | Crea los items del primer menú|
+| submenú | `void` | Crea los items del segundo menu|
+| handleButtonFileAction | `void` | Acción que se ejecuta al darle clik al botón de seleccionar archivo y lo que hace es abrir la ventana emergente para que el usuario seleccione el archivo y valida si el archivo fue seleccionado o no.|
+| handleButtonConvertAction | `void` | Verifica que se tenga seleccionado un archivo, verifica la extensión elegida y verifica que la conversión sea correcta y se pueda realizar el proceso de conversión de lo contrario manda un mensaje de alerta con el mensaje correspondiente al error generado.|
+
+
+#### Class:FXMLDocument.fxml
+
+  Se trabajó bajo la herramienta SceneBuilder mediante la cual se realizó el diseño del front y genero el archivo con la extensión .fxml la cual se conecta con el back end.
 ## Autores
 #### Sergio Stives Barrios Buitrago - [@SerBuitrago](https://github.com/SerBuitrago)
 #### Leyner Jose Ortega Arias - [@Leynerjoseoa](https://github.com/leynerjoseoa)
