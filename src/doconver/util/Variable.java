@@ -15,7 +15,10 @@ public class Variable implements Serializable {
 	
 	public static final String URL_API = "http://54.163.147.33:8080/convertir";
 	
+	public static final String MESSAGE_ERROR_FILE_EXT = "La extenciones esperada debe ser: ";
+	public static final String MESSAGE_ERROR_FILE_EMPTY = "No se ha recibido ningun archivo.";
 	public static final String MESSAGE_ERROR_FILE_EXIST = "El archivo seleccionado no exite en la ruta";
+	public static final String MESSAGE_ERROR_FAIL_RESPONSE = "No se ha recibido respuesta de la API.";
 
 	public static final String[] EXT_WORD = { ".docx", ".ff" };
 	public static final String[] EXT_EXCEL = { ".xlsx", ".xlsb", ".xlsm", ".xls", ".xlw", ".xml" };
@@ -39,6 +42,8 @@ public class Variable implements Serializable {
 	public static final String[] MENU_ODP = { "POWER POINT", "PDF" };
 	public static final String[][] MENU_ITEMS = { MENU_WORD, MENU_EXCEL, MENU_POWER_POINT, MENU_ODT, MENU_ODS,
 			MENU_ODP };
+	public static final String[][] MENU_EXT = { EXT_WORD, EXT_EXCEL, EXT_POWER_POINT, EXT_ODT, EXT_ODS,
+			EXT_ODP };
 
 	public static String pathOutFile() {
 		FileSystemView fsv = FileSystemView.getFileSystemView();

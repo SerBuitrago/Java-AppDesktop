@@ -1,4 +1,4 @@
-package doconver.controller;
+package doconver.util;
 
 import java.io.File;
 import java.io.Serializable;
@@ -18,12 +18,12 @@ public class Validator implements Serializable {
 					}
 				}
 			} else {
-				throw new Exception("El archivo no existe en la ruta " + path + ".");
+				throw new Exception(Variable.MESSAGE_ERROR_FILE_EXIST + " " + path + ".");
 			}
 		} else {
-			throw new Exception("No se ha recibido ningun archivo.");
+			throw new Exception(Variable.MESSAGE_ERROR_FILE_EMPTY);
 		}
-		throw new Exception("La extenciones esperada debe ser: " + toChain(exts) + ".");
+		throw new Exception(Variable.MESSAGE_ERROR_FILE_EXT + toChain(exts) + ".");
 	}
 
 	public static <T> String toChain(T[] exts) {
@@ -37,18 +37,11 @@ public class Validator implements Serializable {
 		return chain;
 	}
 
-	public static String name(String aux) {
-		File file = new File(aux);
-		String var = file.getName();
-		int start = var.lastIndexOf(".");
-		return var.substring(0, start);
-	}
-	
-	public static int indexElement(String vector [], String element){
-		if(vector != null) {
+	public static int indexElement(String vector[], String element) {
+		if (vector != null) {
 			int i = 0;
-			for(String e: vector) {
-				if(e.equals(element)) {
+			for (String e : vector) {
+				if (e.equals(element)) {
 					return i;
 				}
 				i++;

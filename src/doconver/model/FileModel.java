@@ -39,8 +39,7 @@ public class FileModel implements Serializable {
 	public String toBase64() throws Exception {
 		if (isExists()) {
 			byte[] aux = Files.readAllBytes(file.toPath());
-			String base64 = java.util.Base64.getEncoder().encodeToString(aux);
-			return base64;
+			return java.util.Base64.getEncoder().encodeToString(aux);
 		} else {
 			throw new Exception(Variable.MESSAGE_ERROR_FILE_EXIST + " " + this.path + ".");
 		}

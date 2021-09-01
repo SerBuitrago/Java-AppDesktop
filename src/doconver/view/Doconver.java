@@ -12,7 +12,7 @@ public class Doconver extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("controller/FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("fxml/FXMLDocument.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setMaximized(true);

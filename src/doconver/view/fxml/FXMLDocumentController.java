@@ -1,11 +1,11 @@
-package doconver.view.controller;
+package doconver.view.fxml;
 
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import doconver.controller.Convert;
-import doconver.controller.Validator;
+import doconver.controller.ConvertController;
+import doconver.util.Validator;
 import doconver.util.Variable;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -112,51 +112,14 @@ public class FXMLDocumentController implements Initializable {
 
 	@FXML
 	private void handleButtonConvertAction(ActionEvent event) {
-		/*if (is && file != null) {
+		if (is && file != null) {
 			int index = Validator.indexElement(Variable.MENU, this.menuOne.getText());
 			if (index != -1) {
 				int index_two = Validator.indexElement(Variable.MENU_ITEMS[index], this.menuTwo.getText());
-				if (index_two != -1) {
-					Convert convert = new Convert();
+				if (index_two != -1) {					
 					try {
-						switch (index) {
-							case 0:
-								if (index_two == 0)
-									convert.wordToOdt(file.getAbsolutePath());
-								else
-									convert.wordToPDF(file.getAbsolutePath());
-								break;
-							case 1:
-								if (index_two == 0)
-									convert.excelToOds(file.getAbsolutePath());
-								else
-									convert.excelToPDF(file.getAbsolutePath());
-								break;
-							case 2:
-								if (index_two == 0)
-									convert.powerPointToOdp(file.getAbsolutePath());
-								else
-									convert.powerPointToPDF(file.getAbsolutePath());
-								break;
-							case 3:
-								if (index_two == 0)
-									convert.OdtToWord(file.getAbsolutePath());
-								else
-									convert.odtToPDF(file.getAbsolutePath());
-								break;
-							case 4:
-								if (index_two == 0)
-									convert.odsToExcel(file.getAbsolutePath());
-								else
-									convert.odsToPDF(file.getAbsolutePath());
-								break;
-							default:
-								if (index_two == 0)
-									convert.odpToPowerPoint(file.getAbsolutePath());
-								else
-									convert.odptToPDF(file.getAbsolutePath());
-								break;
-						}
+						ConvertController convert = new ConvertController();
+						convert.to(file.getAbsolutePath(), Variable.DIR_DOWNLOAD, index, index_two);
 					} catch (Exception e) {
 						Alert a = new Alert(AlertType.WARNING);
 						a.setTitle(Variable.NAME_PROJECT);
@@ -166,7 +129,7 @@ public class FXMLDocumentController implements Initializable {
 				}
 			}
 			init();
-		}*/
+		}
 		
 	}
 
