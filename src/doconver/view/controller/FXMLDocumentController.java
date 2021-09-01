@@ -3,9 +3,10 @@ package doconver.view.controller;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
-import doconver.app.Convert;
-import doconver.app.Validator;
-import doconver.app.Variable;
+
+import doconver.controller.Convert;
+import doconver.controller.Validator;
+import doconver.util.Variable;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -56,7 +57,7 @@ public class FXMLDocumentController implements Initializable {
 	 */
 	public void items() {
 		this.menuOne.getItems().clear();
-		for (String item : Variable.MENU) {
+		for (String item : doconver.util.Variable.MENU) {
 			MenuItem m = new MenuItem(item);
 			m.setOnAction((e) -> {
 				submenu(m.getText());

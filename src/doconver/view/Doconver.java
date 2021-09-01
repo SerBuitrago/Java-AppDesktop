@@ -1,6 +1,6 @@
 package doconver.view;
 
-import doconver.app.Variable;
+import doconver.util.Variable;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

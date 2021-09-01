@@ -1,4 +1,4 @@
-package doconver.app;
+package doconver.controller;
 
 import java.io.File;
 import java.io.Serializable;
