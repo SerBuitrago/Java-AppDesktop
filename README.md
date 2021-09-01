@@ -31,35 +31,6 @@ La siguiente es una aplicación de escritorio desarrollada en el lenguaje de pro
 ![App Screenshot](https://i.ibb.co/yYVLfS9/Resultado.png)
 
   
-## API Reference
-
-#### Get all items
-
-```https://apireference.aspose.com/pdf/java
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `outputLogFileName` | `string` | **Required**. Ruta al archivo donde se almacenarán los comentarios. |
-| `format` | `int` | **Required**. El formato pdf. |
-| `action` | `int` | **Required**. Acción para objetos que no se pueden convertir. |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### PdfFormatConversionOptions ( String  outputLogFileName, formato int, int action)
-
-Toma la ruta donde se almacenara el archivo, el formato pdf, la acción para objetos a convertir y retorna un nuevo archivo con formato deseado
-
-  
 ## Autores
 #### Sergio Stives Barrios Buitrago - [@SerBuitrago](https://github.com/SerBuitrago)
 #### Leyner Jose Ortega Arias - [@Leynerjoseoa](https://github.com/leynerjoseoa)
