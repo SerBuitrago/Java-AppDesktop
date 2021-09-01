@@ -112,7 +112,7 @@ public class FXMLDocumentController implements Initializable {
 
 	@FXML
 	private void handleButtonConvertAction(ActionEvent event) {
-		if (is && file != null) {
+		/*if (is && file != null) {
 			int index = Validator.indexElement(Variable.MENU, this.menuOne.getText());
 			if (index != -1) {
 				int index_two = Validator.indexElement(Variable.MENU_ITEMS[index], this.menuTwo.getText());
@@ -166,7 +166,7 @@ public class FXMLDocumentController implements Initializable {
 				}
 			}
 			init();
-		}
+		}*/
 		
 	}
 

@@ -1,7 +1,6 @@
 package doconver.model;
 
 import java.io.File;
-import java.io.IOException;
 import java.io.Serializable;
 import java.nio.file.Files;
 
@@ -39,9 +38,9 @@ public class FileModel implements Serializable {
 
 	public String toBase64() throws Exception {
 		if (isExists()) {
-			byte[] archivobytes = Files.readAllBytes(file.toPath());
-			String Abase64 = java.util.Base64.getEncoder().encodeToString(archivobytes);
-			return Abase64;
+			byte[] aux = Files.readAllBytes(file.toPath());
+			String base64 = java.util.Base64.getEncoder().encodeToString(aux);
+			return base64;
 		} else {
 			throw new Exception(Variable.MESSAGE_ERROR_FILE_EXIST + " " + this.path + ".");
 		}
