@@ -27,7 +27,7 @@ public class ConvertController implements Serializable {
 		if (Validator.validate(entry, Variable.MENU_EXT[extEntry])) {
 			FileModel model = new FileModel(entry);
 			RequestController request = new RequestController();
-			JSONObject send = request.structure(model, Variable.MENU_ITEMS[extEntry][extOutput]);
+			JSONObject send = request.structure(model, Variable.MENU_EXT_CONVERT[extEntry][extOutput]);
 			RequestModel requestModel = new RequestModel(request.post(Variable.URL_API, send));
 			save(requestModel.getBase64(), output, requestModel.getName());
 		}

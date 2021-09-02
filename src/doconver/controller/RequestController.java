@@ -25,7 +25,7 @@ public class RequestController implements Serializable {
 		JSONObject object = new JSONObject();
 		object.put("nombreArchivo", model.getNameExt());
 		object.put("extensionFuente", model.getExt().substring(model.getExt().lastIndexOf(".") + 1).toUpperCase());
-		object.put("extensionDestino", ext);
+		object.put("extensionDestino", ext.substring(ext.lastIndexOf(".") + 1).toUpperCase());
 		object.put("base64", model.toBase64());
 		return object;
 	}
