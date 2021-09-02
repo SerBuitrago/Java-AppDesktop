@@ -9,7 +9,7 @@ La siguiente es una aplicación de escritorio desarrollada en el lenguaje de pro
     
 ## Documentation
 
-[Documentation](https://drive.google.com/drive/folders/1Mv2nTsDL2ATsxjFaTDsrfqQBHzdRjEIK?usp=sharing)
+[Documentation y Ejecutables](https://drive.google.com/drive/folders/1Mv2nTsDL2ATsxjFaTDsrfqQBHzdRjEIK?usp=sharing)
 
   
 ## Librerias
@@ -79,11 +79,10 @@ Clase:  Variables.java
 | `EXT_ODT` | `String[]` | Extensiones validas por ODT .odt |
 | `EXT_ODS` | `String[]` | Extensiones validas por ODS .ods |
 | `EXT_ODP` | `String[]` | Extensiones validas por ODP .odp |
-
 | `MENU` | `iString[]` | Menu dinamico que contiene las opciones de los archivos que se pueden convertir "WORD", "EXCEL", "POWER POINT", "ODT", "ODS", "ODP" |
 | `MENU_WORD` | `String[]` |Contiene los tipos de archivos a los que se puede convertir un documento de word - ODT, PDF |
 | `MENU_EXCEL` | `String[]` |Contiene los tipos de archivos a los que se puede convertir un documento de Excel ODS, PDF |
-| `MENU_POWER_POINT` | `String[]` |Contiene los tipos de archivos a los que se puede convertir un documento de Power Point - ODP, PDF  |
+| `MENU_POWER_POINT` | `String[]` |Contiene los tipos de archivos a los que se puede convertir un documento de Power Point - ODP, PDF |
 | `MENU_ODT` | `String[]` |Contiene los tipos de archivos a los que se puede convertir un documento de ODT - WORD, PDF |
 | `MENU_ODS` | `String[]` |Contiene los tipos de archivos a los que se puede convertir un documento de ODS - EXCEL, PDF |
 | `MENU_ODP` | `String[]` |Contiene los tipos de archivos a los que se puede convertir un documento de ODP - POWER POINT, PDF|
@@ -249,7 +248,7 @@ Clase:  FXMLDocumentController.java
 | handleButtonConvertAction | `void` | Verifica que se tenga seleccionado un archivo, verifica la extensión elegida y verifica que la conversión sea correcta y se pueda realizar el proceso de conversión de lo contrario manda un mensaje de alerta con el mensaje correspondiente al error generado.|
 
 ```https://apireference.aspose.com/pdf/java
-Clase:  FXMLDocument.fxml.java
+Xml: FXMLDocument.fxml.java
 
  Vista de la aplicacion la cual se trabajó bajo la herramienta SceneBuilder mediante la cual se realizó el diseño del front y genero el archivo con la extensión .fxml la cual se conecta con el back end.
 ```
