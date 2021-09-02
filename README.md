@@ -288,7 +288,7 @@ Clase:  Validator.java
 
 se utilizo Launch4j para empaquetar la aplicacion 
 
-####  Se Necesita que este instalado java 
+####  Se Necesita que este instalado java al momento de la instalacion 
 
 #### Class:FXMLDocument.fxml
 
