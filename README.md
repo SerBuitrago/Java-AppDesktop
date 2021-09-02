@@ -284,6 +284,11 @@ Clase:  Validator.java
 | handleButtonFileAction | `void` | Acción que se ejecuta al darle clik al botón de seleccionar archivo y lo que hace es abrir la ventana emergente para que el usuario seleccione el archivo y valida si el archivo fue seleccionado o no.|
 | handleButtonConvertAction | `void` | Verifica que se tenga seleccionado un archivo, verifica la extensión elegida y verifica que la conversión sea correcta y se pueda realizar el proceso de conversión de lo contrario manda un mensaje de alerta con el mensaje correspondiente al error generado.|
 
+#### Herramienta Para empaquetar 
+
+se utilizo Launch4j para empaquetar la aplicacion 
+
+####  Se Necesita que este instalado java 
 
 #### Class:FXMLDocument.fxml
 
